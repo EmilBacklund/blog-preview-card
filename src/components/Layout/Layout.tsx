@@ -1,6 +1,12 @@
-const Layout = ({ children }) => {
+const Layout = ({ children, isHovered }) => {
   return (
-    <body className='bg-black h-screen font-figtree text-black overflow-hidden'>{children}</body>
+    <body
+      className={` h-screen font-figtree text-black overflow-hidden transiton duration-500 ${
+        isHovered ? 'bg-black/90' : 'bg-yellow'
+      }`}
+    >
+      {children}
+    </body>
   );
 };
 

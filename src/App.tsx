@@ -3,7 +3,7 @@ import Layout from './components/Layout/Layout';
 import { useState } from 'react';
 
 function App() {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState<boolean>(false);
 
   return (
     <Layout isHovered={isHovered}>
